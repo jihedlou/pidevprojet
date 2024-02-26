@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterEvaluationController">
+   <children>
+      <TextField fx:id="txt1" alignment="BOTTOM_CENTER" layoutX="316.0" layoutY="228.0" prefWidth="150.0" promptText=" " />
+      <TextField fx:id="txt2" layoutX="312.0" layoutY="289.0" />
+      <TextField fx:id="txt3" layoutX="316.0" layoutY="341.0" />
+      <Label layoutX="71.0" layoutY="224.0" prefHeight="30.0" prefWidth="109.0" text="pédagogie">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="257.0" layoutY="412.0" mnemonicParsing="false" onAction="#Ajouterevaluation" style="-fx-background-color: yellow;" text="Valider" />
+      <Label layoutX="117.0" text="Ajouter Evaluation">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="81.0" style="-fx-background-color: yellow;" text="Pas satisfaisante" />
+      <Label layoutX="250.0" layoutY="81.0" style="-fx-background-color: yellow;" text="Satisfaisante" />
+      <Label layoutX="451.0" layoutY="81.0" style="-fx-background-color: yellow;" styleClass="styles.css" text="Très satisfaisante" />
+      <Label layoutX="71.0" layoutY="287.0" prefHeight="30.0" prefWidth="129.0" text="Support Cours">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="339.0" prefHeight="30.0" prefWidth="129.0" text="Ambiance">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="358.0" layoutY="412.0" mnemonicParsing="false" onAction="#AfficherEvaluation" text="Afficher" />
+      <Label layoutX="73.0" layoutY="121.0" text="cour">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="179.0" text="nom_enseignant" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cour" layoutX="317.0" layoutY="123.0" />
+      <TextField fx:id="ensei" layoutX="317.0" layoutY="181.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="SW_RESIZE" />
+   </cursor>
+</AnchorPane>
